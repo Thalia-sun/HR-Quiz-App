@@ -7,42 +7,42 @@
 <title>HR Manager Quiz — RRHH Dirección Estratégica</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  :root {
-    --gold: #C9A84C;
-    --gold-light: #E8C96A;
-    --dark: #0F0F0F;
-    --dark-2: #1A1A1A;
-    --dark-3: #242424;
-    --dark-4: #2E2E2E;
-    --cream: #F5F0E8;
-    --cream-dim: #D4CFC7;
-    --accent: #4A90D9;
-    --green: #4CAF7A;
-    --red: #E05252;
-    --silver: #A8A8A8;
-    --bronze: #CD7F32;
-  }
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    background: var(--dark);
-    color: var(--cream);
-    font-family: 'DM Sans', sans-serif;
-    min-height: 100vh;
-    overflow-x: hidden;
-  }
-  .bg-pattern {
-    position: fixed; inset: 0; z-index: 0;
-    background:
-      radial-gradient(ellipse 80% 60% at 20% 10%, rgba(201,168,76,0.06) 0%, transparent 60%),
-      radial-gradient(ellipse 60% 80% at 80% 90%, rgba(74,144,217,0.04) 0%, transparent 60%),
-      repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255,255,255,0.015) 39px, rgba(255,255,255,0.015) 40px),
-      repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(255,255,255,0.015) 39px, rgba(255,255,255,0.015) 40px);
-    pointer-events: none;
-  }
-  .app { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 40px 20px; }
-  .screen { display: none; animation: fadeIn 0.5s ease; }
-  .screen.active { display: block; }
-  @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+  :root {
+    --gold: #C9A84C;
+    --gold-light: #E8C96A;
+    --dark: #0F0F0F;
+    --dark-2: #1A1A1A;
+    --dark-3: #242424;
+    --dark-4: #2E2E2E;
+    --cream: #F5F0E8;
+    --cream-dim: #D4CFC7;
+    --accent: #4A90D9;
+    --green: #4CAF7A;
+    --red: #E05252;
+    --silver: #A8A8A8;
+    --bronze: #CD7F32;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--dark);
+    color: var(--cream);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+  .bg-pattern {
+    position: fixed; inset: 0; z-index: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 20% 10%, rgba(201,168,76,0.06) 0%, transparent 60%),
+      radial-gradient(ellipse 60% 80% at 80% 90%, rgba(74,144,217,0.04) 0%, transparent 60%),
+      repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255,255,255,0.015) 39px, rgba(255,255,255,0.015) 40px),
+      repeating-linear-gradient(90deg, transparent, transparent 39px, rgba(255,255,255,0.015) 39px, rgba(255,255,255,0.015) 40px);
+    pointer-events: none;
+  }
+  .app { position: relative; z-index: 1; max-width: 860px; margin: 0 auto; padding: 40px 20px; }
+  .screen { display: none; animation: fadeIn 0.5s ease; }
+  .screen.active { display: block; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 
 .brand { text-align: center; margin-bottom: 50px; }
 .brand-tag {
@@ -132,7 +132,7 @@ margin-bottom: 28px; border: 1px solid rgba(255,255,255,0.05);
 .q-level-badge { font-size: 11px; letter-spacing: 3px; text-transform: uppercase; padding: 5px 14px; border-radius: 2px; border: 1px solid; }
 .q-level-badge.bronze { color: var(–bronze); border-color: rgba(205,127,50,0.4); background: rgba(205,127,50,0.08); }
 .q-level-badge.silver { color: var(–silver); border-color: rgba(168,168,168,0.4); background: rgba(168,168,168,0.08); }
-.q-level-badge.gold   { color: var(–gold);   border-color: rgba(201,168,76,0.4);  background: rgba(201,168,76,0.08); }
+.q-level-badge.gold   { color: var(–gold);   border-color: rgba(201,168,76,0.4);  background: rgba(201,168,76,0.08); }
 .score-display { font-size: 14px; color: var(–gold); font-weight: 600; }
 
 .question-card { background: var(–dark-2); border: 1px solid rgba(255,255,255,0.07); border-radius: 16px; padding: 32px; }
@@ -217,232 +217,232 @@ box-shadow: 0 0 60px rgba(201,168,76,0.05);
 <div class="bg-pattern"></div>
 <div class="app">
 
-  <!-- HOME -->
+  <!-- HOME -->
 
-  <div id="screen-home" class="screen active">
-    <div class="brand">
-      <div class="brand-tag">📋 ADGD0031 — Módulo 1</div>
-      <h1>RRHH <span>Quiz</span><br>Academy</h1>
-      <p>Meistere die Strategische HR-Direktion. Kämpfe dich vom Praktikanten zum HR Manager hoch.</p>
-    </div>
+  <div id="screen-home" class="screen active">
+    <div class="brand">
+      <div class="brand-tag">📋 ADGD0031 — Módulo 1</div>
+      <h1>RRHH <span>Quiz</span><br>Academy</h1>
+      <p>Meistere die Strategische HR-Direktion. Kämpfe dich vom Praktikanten zum HR Manager hoch.</p>
+    </div>
 
 ```
 <div class="hierarchy-strip">
-  <div class="hier-step current" id="hs0"><span class="step-icon">🎓</span><div class="step-name">Praktikant</div></div>
-  <div class="hier-step" id="hs1"><span class="step-icon">📋</span><div class="step-name">HR Assistent</div></div>
-  <div class="hier-step" id="hs2"><span class="step-icon">🏅</span><div class="step-name">HR Specialist</div></div>
-  <div class="hier-step" id="hs3"><span class="step-icon">🥇</span><div class="step-name">HR Director</div></div>
-  <div class="hier-step" id="hs4"><span class="step-icon">👑</span><div class="step-name">HR Manager</div></div>
+  <div class="hier-step current" id="hs0"><span class="step-icon">🎓</span><div class="step-name">Praktikant</div></div>
+  <div class="hier-step" id="hs1"><span class="step-icon">📋</span><div class="step-name">HR Assistent</div></div>
+  <div class="hier-step" id="hs2"><span class="step-icon">🏅</span><div class="step-name">HR Specialist</div></div>
+  <div class="hier-step" id="hs3"><span class="step-icon">🥇</span><div class="step-name">HR Director</div></div>
+  <div class="hier-step" id="hs4"><span class="step-icon">👑</span><div class="step-name">HR Manager</div></div>
 </div>
 
 <div class="earned-medals" id="earned-medals"></div>
 
 <div class="levels-grid">
-  <div class="level-card bc" onclick="startQuiz('bronze')">
-    <div class="level-icon">🥉</div>
-    <div class="level-label">Level 1</div>
-    <div class="level-title">Grundlagen</div>
-    <div class="level-desc">Grundkonzepte der strategischen HR-Direktion. Perfekt für den Einstieg.</div>
-    <div class="level-count">10 Fragen · Leicht</div>
-  </div>
-  <div class="level-card sc" onclick="startQuiz('silver')">
-    <div class="level-icon">🥈</div>
-    <div class="level-label">Level 2</div>
-    <div class="level-title">Vertiefung</div>
-    <div class="level-desc">Planungsprozesse, Organisationsstruktur und Transformationsmanagement.</div>
-    <div class="level-count">10 Fragen · Mittel</div>
-  </div>
-  <div class="level-card gc" onclick="startQuiz('gold')">
-    <div class="level-icon">🥇</div>
-    <div class="level-label">Level 3</div>
-    <div class="level-title">Exzellenz</div>
-    <div class="level-desc">KPIs, strategische Ziele, Wettbewerbsvorteile und komplexe Szenarien.</div>
-    <div class="level-count">10 Fragen · Schwer</div>
-  </div>
+  <div class="level-card bc" onclick="startQuiz('bronze')">
+    <div class="level-icon">🥉</div>
+    <div class="level-label">Level 1</div>
+    <div class="level-title">Grundlagen</div>
+    <div class="level-desc">Grundkonzepte der strategischen HR-Direktion. Perfekt für den Einstieg.</div>
+    <div class="level-count">10 Fragen · Leicht</div>
+  </div>
+  <div class="level-card sc" onclick="startQuiz('silver')">
+    <div class="level-icon">🥈</div>
+    <div class="level-label">Level 2</div>
+    <div class="level-title">Vertiefung</div>
+    <div class="level-desc">Planungsprozesse, Organisationsstruktur und Transformationsmanagement.</div>
+    <div class="level-count">10 Fragen · Mittel</div>
+  </div>
+  <div class="level-card gc" onclick="startQuiz('gold')">
+    <div class="level-icon">🥇</div>
+    <div class="level-label">Level 3</div>
+    <div class="level-title">Exzellenz</div>
+    <div class="level-desc">KPIs, strategische Ziele, Wettbewerbsvorteile und komplexe Szenarien.</div>
+    <div class="level-count">10 Fragen · Schwer</div>
+  </div>
 </div>
 
 <div class="home-actions">
-  <button class="btn btn-outline" onclick="resetAll()">↺ Fortschritt zurücksetzen</button>
+  <button class="btn btn-outline" onclick="resetAll()">↺ Fortschritt zurücksetzen</button>
 </div>
 ```
 
-  </div>
+  </div>
 
-  <!-- QUIZ -->
+  <!-- QUIZ -->
 
-  <div id="screen-quiz" class="screen">
-    <div class="progress-wrap">
-      <div class="progress-info">
-        <div class="progress-title" id="quiz-level-label">Level 1</div>
-        <div class="progress-counter" id="q-counter">Frage 1 von 10</div>
-      </div>
-      <div class="progress-bar-track">
-        <div class="progress-bar-fill" id="progress-fill" style="width:10%"></div>
-      </div>
-    </div>
-    <div class="question-header">
-      <div class="q-level-badge bronze" id="q-badge">🥉 Grundlagen</div>
-      <div class="score-display" id="score-display">✦ 0 Punkte</div>
-    </div>
-    <div class="question-card">
-      <div class="q-category" id="q-category"></div>
-      <div class="question-text" id="question-text"></div>
-      <div class="options" id="options"></div>
-      <div class="feedback-box" id="feedback-box">
-        <div class="fb-icon" id="fb-icon"></div>
-        <div class="fb-title" id="fb-title"></div>
-        <div class="fb-text" id="fb-text"></div>
-      </div>
-    </div>
-    <div class="btn-row">
-      <button class="btn btn-outline" onclick="goHome()">← Zurück</button>
-      <button class="btn btn-gold" id="next-btn" onclick="nextQuestion()" style="display:none">Weiter →</button>
-    </div>
-  </div>
+  <div id="screen-quiz" class="screen">
+    <div class="progress-wrap">
+      <div class="progress-info">
+        <div class="progress-title" id="quiz-level-label">Level 1</div>
+        <div class="progress-counter" id="q-counter">Frage 1 von 10</div>
+      </div>
+      <div class="progress-bar-track">
+        <div class="progress-bar-fill" id="progress-fill" style="width:10%"></div>
+      </div>
+    </div>
+    <div class="question-header">
+      <div class="q-level-badge bronze" id="q-badge">🥉 Grundlagen</div>
+      <div class="score-display" id="score-display">✦ 0 Punkte</div>
+    </div>
+    <div class="question-card">
+      <div class="q-category" id="q-category"></div>
+      <div class="question-text" id="question-text"></div>
+      <div class="options" id="options"></div>
+      <div class="feedback-box" id="feedback-box">
+        <div class="fb-icon" id="fb-icon"></div>
+        <div class="fb-title" id="fb-title"></div>
+        <div class="fb-text" id="fb-text"></div>
+      </div>
+    </div>
+    <div class="btn-row">
+      <button class="btn btn-outline" onclick="goHome()">← Zurück</button>
+      <button class="btn btn-gold" id="next-btn" onclick="nextQuestion()" style="display:none">Weiter →</button>
+    </div>
+  </div>
 
-  <!-- MEDAL -->
+  <!-- MEDAL -->
 
-  <div id="screen-medal" class="screen">
-    <div class="medal-screen-inner">
-      <span class="medal-big" id="medal-emoji"></span>
-      <div class="medal-rank" id="medal-rank"></div>
-      <div class="medal-title" id="medal-title"></div>
-      <div class="medal-desc" id="medal-desc"></div>
-      <div class="stats-row">
-        <div class="stat-item"><div class="stat-num" id="result-score"></div><div class="stat-label">Punkte</div></div>
-        <div class="stat-item"><div class="stat-num" id="result-correct"></div><div class="stat-label">Richtig</div></div>
-        <div class="stat-item"><div class="stat-num" id="result-pct"></div><div class="stat-label">Erfolgsquote</div></div>
-      </div>
-      <div class="btn-row" style="justify-content:center;gap:16px">
-        <button class="btn btn-outline" onclick="retryQuiz()">↺ Wiederholen</button>
-        <button class="btn btn-gold" id="next-level-btn">Weiter →</button>
-      </div>
-    </div>
-  </div>
+  <div id="screen-medal" class="screen">
+    <div class="medal-screen-inner">
+      <span class="medal-big" id="medal-emoji"></span>
+      <div class="medal-rank" id="medal-rank"></div>
+      <div class="medal-title" id="medal-title"></div>
+      <div class="medal-desc" id="medal-desc"></div>
+      <div class="stats-row">
+        <div class="stat-item"><div class="stat-num" id="result-score"></div><div class="stat-label">Punkte</div></div>
+        <div class="stat-item"><div class="stat-num" id="result-correct"></div><div class="stat-label">Richtig</div></div>
+        <div class="stat-item"><div class="stat-num" id="result-pct"></div><div class="stat-label">Erfolgsquote</div></div>
+      </div>
+      <div class="btn-row" style="justify-content:center;gap:16px">
+        <button class="btn btn-outline" onclick="retryQuiz()">↺ Wiederholen</button>
+        <button class="btn btn-gold" id="next-level-btn">Weiter →</button>
+      </div>
+    </div>
+  </div>
 
-  <!-- FINAL -->
+  <!-- FINAL -->
 
-  <div id="screen-final" class="screen">
-    <div class="final-card">
-      <span class="final-emoji">👑</span>
-      <div class="trophy-row">🥉🥈🥇</div>
-      <div class="final-title">HR Manager!</div>
-      <div class="final-sub">
-        Herzlichen Glückwunsch! Du hast alle drei Level gemeistert und bist nun offiziell <strong>HR Manager</strong>. Du beherrschst die Strategische Direktion der Personalabteilung auf höchstem Niveau.
-      </div>
-      <div class="stats-row">
-        <div class="stat-item"><div class="stat-num" id="final-total"></div><div class="stat-label">Gesamtpunkte</div></div>
-        <div class="stat-item"><div class="stat-num">🥉🥈🥇</div><div class="stat-label">Alle Medaillen</div></div>
-      </div>
-      <button class="btn btn-gold" onclick="resetAll();goHome()">Nochmal von vorne</button>
-    </div>
-  </div>
+  <div id="screen-final" class="screen">
+    <div class="final-card">
+      <span class="final-emoji">👑</span>
+      <div class="trophy-row">🥉🥈🥇</div>
+      <div class="final-title">HR Manager!</div>
+      <div class="final-sub">
+        Herzlichen Glückwunsch! Du hast alle drei Level gemeistert und bist nun offiziell <strong>HR Manager</strong>. Du beherrschst die Strategische Direktion der Personalabteilung auf höchstem Niveau.
+      </div>
+      <div class="stats-row">
+        <div class="stat-item"><div class="stat-num" id="final-total"></div><div class="stat-label">Gesamtpunkte</div></div>
+        <div class="stat-item"><div class="stat-num">🥉🥈🥇</div><div class="stat-label">Alle Medaillen</div></div>
+      </div>
+      <button class="btn btn-gold" onclick="resetAll();goHome()">Nochmal von vorne</button>
+    </div>
+  </div>
 
 </div>
 <script>
 const Q = {
-  bronze: [
-    { cat:"Grundkonzept", text:"Was ist die Dirección Estratégica de RRHH?",
-      opts:["Ein reines Verwaltungssystem für Gehaltsabrechnungen","Ein Ansatz, der Personalmanagement in den Kern der Unternehmensstrategie integriert","Eine Abteilung, die nur Arbeitsverträge bearbeitet","Ein externes Beratungsunternehmen für Recruiting"],
-      c:1, ex:"Die Strategische HR-Direktion ist kein reines Verwaltungsinstrument – sie beeinflusst direkt Wettbewerbsfähigkeit, Innovation und Nachhaltigkeit der Organisation." },
-    { cat:"Evolutionsstufen", text:"Welche drei Hauptphasen hat die Entwicklung von RRHH durchlaufen?",
-      opts:["Digitalisierung → Automatisierung → Künstliche Intelligenz","Personalverwaltung (reaktiv) → HR-Management (funktional) → Strategische HR-Direktion (proaktiv & analytisch)","Recruiting → Training → Retention","Administration → Kommunikation → Strategie"],
-      c:1, ex:"RRHH durchlief drei große Etappen: zuerst reine Personalverwaltung (reaktiv), dann funktionales HR-Management, und schließlich die strategische Direktion mit proaktivem und analytischem Ansatz." },
-    { cat:"Reaktiver Ansatz", text:"Was charakterisiert den reaktiven Ansatz (Etappe 1) von RRHH?",
-      opts:["Vorausschauende Planung und Datenanalyse","Aktive Teilnahme am Managementkomitee","Nur handeln wenn ein Problem auftritt – Verträge, Gehaltsabrechnungen, kein strategisches Denken","Entwicklung umfassender Entwicklungspläne für Mitarbeiter"],
-      c:2, ex:"In der reaktiven Phase wartete RRHH auf Probleme, bevor gehandelt wurde. Keine Vorausplanung, keine Datenanalyse – nur administrative Aufgaben wie Verträge und Gehaltsabrechnungen." },
-    { cat:"Unternehmensstrategie", text:"Welche Aussage beschreibt korrekt den Ausgangspunkt jeder HR-Strategie?",
-      opts:["Die HR-Strategie entsteht unabhängig vom Unternehmensmodell","Jede HR-Strategie leitet sich aus der Unternehmensstrategie ab","HR-Strategien werden ausschließlich von Gewerkschaften definiert","Die Marktlage ist der einzige Ausgangspunkt"],
-      c:1, ex:"Jede HR-Strategie entsteht aus der Unternehmensstrategie heraus. RRHH muss das Geschäftsmodell verstehen, die kritischen Erfolgsfaktoren identifizieren und diese in Talentbedarf übersetzen." },
-    { cat:"Proaktiver Ansatz", text:"Was bedeutet es, in RRHH 'proaktiv' zu sein?",
-      opts:["Warten bis ein Mitarbeiter kündigt, bevor man sucht","Probleme antizipieren bevor sie auftreten, z.B. Personalbedarf im Voraus planen","Schnell auf bestehende Probleme reagieren","Externe Berater für alle Entscheidungen einsetzen"],
-      c:1, ex:"Proaktiv zu sein bedeutet, Problemen zuvorzukommen bevor sie entstehen. Nicht warten bis Personal fehlt, sondern es vorausplanen. Wie die Heizung vor dem Winter prüfen, nicht wenn sie im Winter ausfällt." },
-    { cat:"Upskilling & Reskilling", text:"Was ist der Unterschied zwischen Upskilling und Reskilling?",
-      opts:["Es gibt keinen Unterschied – beide Begriffe bedeuten dasselbe","Upskilling = bestehende Fähigkeiten verbessern (im selben Beruf); Reskilling = neue Fähigkeiten für einen anderen Beruf erlernen","Upskilling betrifft Führungskräfte, Reskilling betrifft Mitarbeiter","Reskilling ist teurer als Upskilling"],
-      c:1, ex:"Upskilling verbessert vorhandene Fähigkeiten im selben Job. Reskilling erlernt komplett neue Kompetenzen für einen anderen Job. Beide sind 2026 entscheidend für Unternehmen." },
-    { cat:"Digitalisierung", text:"Was kann KI und digitale Systeme in RRHH bereits automatisieren?",
-      opts:["Nur Gehaltsabrechnungen","Lebenslauf-Screening, Gehaltsabrechnung, Zeiterfassung, automatische Antworten, Interview-Planung","Nur die Kommunikation mit Gewerkschaften","Lediglich die Urlaubsverwaltung"],
-      c:1, ex:"KI und digitale Systeme automatisieren bereits: Lebenslauf-Screening, Gehaltsabrechnung, Zeiterfassung, automatische Antworten auf häufige Fragen und Interview-Terminierung. Das befreit RRHH für strategischere Aufgaben." },
-    { cat:"HR Business Partner", text:"Was macht ein HR Business Partner (HRBP)?",
-      opts:["Er verhandelt ausschließlich mit Gewerkschaften","Er ist eine HR-Person, die einem spezifischen Geschäftsbereich zugewiesen wird und als interner Berater fungiert","Er analysiert nur Finanzkennzahlen","Er ist für die externe Rekrutierung zuständig"],
-      c:1, ex:"Der HRBP ist wie ein 'vertrauenswürdiges RRHH' für einen spezifischen Bereich. Er kennt diesen Bereich sehr gut und hilft Führungskräften bei Selektion, Entwicklung, Konfliktlösung und Personalplanung." },
-    { cat:"People Analytics", text:"Was versteht man unter 'People Analytics'?",
-      opts:["Persönliche Gespräche mit allen Mitarbeitern führen","Datenbasierte Analyse von Personalinformationen (Fluktuation, Burnout-Risiko, Entwicklungsbedarf)","Das Sammeln von Lebensläufen","Die manuelle Berechnung von Gehältern"],
-      c:1, ex:"People Analytics bedeutet: Daten über Personen analysieren – ähnlich wie Marketing oder Finanzen. Damit kann RRHH vorhersagen, wer die Firma verlassen könnte, Burnout-Risiken erkennen und optimale Weiterbildungsmaßnahmen identifizieren." },
-    { cat:"Neue Arbeitsformen", text:"Welche neuen Arbeitsformen sind 2026 zur Normalität geworden?",
-      opts:["Ausschließlich Büroarbeit 9-17 Uhr","Homeoffice, Hybrid-Arbeit, verteilte Teams, flexible Zeiten und projektbasiertes Arbeiten","Nur Schichtarbeit in Produktionsbetrieben","Vier-Tage-Woche als einziges Modell"],
-      c:1, ex:"Die Pandemie beschleunigte Veränderungen, die 2026 normal sind: Homeoffice, hybrides Arbeiten, verteilte Teams, flexible Arbeitszeiten und projektbasiertes Arbeiten. RRHH muss Richtlinien für diese neue Realität entwickeln." }
-  ],
-  silver: [
-    { cat:"Wettbewerbsvorteil", text:"Welche drei Bedingungen müssen erfüllt sein, damit Menschen einen echten Wettbewerbsvorteil darstellen?",
-      opts:["Günstig, schnell verfügbar und leicht ersetzbar sein","Schwer imitierbar, wertschöpfend organisiert und zeitlich nachhaltig sein","Jung, digital-affin und gut ausgebildet sein","Aus der Region stammen, loyal sein und lange im Unternehmen bleiben"],
-      c:1, ex:"Menschen sind Wettbewerbsvorteil wenn sie: schwer imitierbar sind (Kombination aus Talent + Kultur + Leadership), wertschöpfend organisiert werden und nachhaltig im Laufe der Zeit sind." },
-    { cat:"Transformationsagent", text:"Warum wird RRHH als 'Transformationsagent' bezeichnet?",
-      opts:["Weil RRHH Umstrukturierungen ohne Zustimmung der Mitarbeiter durchführen kann","Weil RRHH als Brücke zwischen Unternehmensführung und Mitarbeitern fungiert und Veränderungen aktiv begleitet","Weil RRHH externe Berater beauftragt","Weil RRHH für IT-Implementierungen verantwortlich ist"],
-      c:1, ex:"Als Transformationsagent beschränkt sich RRHH nicht auf 'das verwalten was ist', sondern treibt Veränderungen an, begleitet Menschen durch diese, reduziert Widerstände und hilft dem Unternehmen, sich anzupassen." },
-    { cat:"HR-Planung", text:"Was ist das Kernziel der strategischen HR-Planung?",
-      opts:["Möglichst viele Mitarbeiter einzustellen","Sicherzustellen, dass das Unternehmen zum richtigen Zeitpunkt die richtigen Personen mit den richtigen Fähigkeiten hat","Die Personalkosten zu minimieren","Alle offenen Stellen sofort zu besetzen"],
-      c:1, ex:"HR-Planung bedeutet vorausdenken: Wer wird gebraucht? Mit welchem Profil? Wann? Nicht 'Feuer löschen', sondern vorbeugen und vorbereiten – Planung statt Reaktion." },
-    { cat:"Planungsphasen", text:"In welcher Reihenfolge erfolgen die Phasen der strategischen HR-Planung?",
-      opts:["Maßnahmenplan → Diagnose → Interner Analyse → Ziele setzen","Interner Analyse → Externer Analyse → Diagnose (SWOT) → Ziele → Maßnahmenplan → Evaluation","Ziele setzen → Stellen besetzen → Erfolg messen","Externer Analyse → Recruiting → Training → Evaluation"],
-      c:1, ex:"Die korrekte Reihenfolge ist: 1) Interner Analyse, 2) Externer Analyse, 3) Diagnose/SWOT, 4) Ziele definieren, 5) Maßnahmenpläne entwickeln, 6) Evaluation und Kontrolle." },
-    { cat:"Rekrutierung", text:"Was ist die Aufgabe des Bereichs 'Selección y Reclutamiento'?",
-      opts:["Nur Stellenanzeigen veröffentlichen","Den gesamten Auswahlprozess steuern: Profildefinition, Inserate, CV-Screening, Interviews, Onboarding","Ausschließlich interne Versetzungen verwalten","Gehaltsverhandlungen führen"],
-      c:1, ex:"Die Rekrutierungsabteilung kümmert sich um: Profilanalyse, Stellenanzeigen, Lebenslauf-Prüfung, Interviews und Tests, Koordination mit Führungskräften und Onboarding-Prozess. Wichtig: nicht nur Fachkompetenz, sondern auch Kultur-Fit." },
-    { cat:"Interner Analyse", text:"Welche vier Bereiche werden bei der internen HR-Analyse untersucht?",
-      opts:["Budget, Technologie, Konkurrenz und Markttrends","Aktuelle Belegschaft, Kompetenzen, Arbeitsklima/Engagement und HR-Prozesse","Gehalt, Urlaub, Krankheitstage und Produktivität","Recruiting, Onboarding, Training und Offboarding"],
-      c:1, ex:"Die interne Analyse betrachtet: 1) Aktuelle Belegschaft (Anzahl, Alter, Seniorität), 2) Kompetenzen (was kann die Belegschaft?), 3) Klima und Engagement und 4) HR-Prozesse (funktionieren sie gut?)." },
-    { cat:"Kulturelle Transformation", text:"Was bedeutet 'Kulturelle Transformation' und welche Rolle spielt RRHH dabei?",
-      opts:["Neue Büromöbel kaufen und das Logo ändern","Werte und Verhaltensweisen wandeln; RRHH definiert Zielwerte, gestaltet Maßnahmen und misst die reale Kultur","Mitarbeiter aus anderen Ländern einstellen","Die Unternehmensstruktur flach machen"],
-      c:1, ex:"Kulturelle Transformation bedeutet Wandel von Werten, Normen und Verhaltensweisen. RRHH definiert gemeinsam mit der Führung die gewünschten Werte, gestaltet Maßnahmen zur Stärkung und misst Klima und echte Kultur." },
-    { cat:"DAFO-Analyse", text:"Ein Unternehmen hat viele Mitarbeiter kurz vor der Rente und schlechte digitale Kompetenzen. Was sind das im DAFO?",
-      opts:["Stärken (Fortalezas)","Chancen (Oportunidades)","Schwächen (Debilidades)","Bedrohungen (Amenazas)"],
-      c:2, ex:"Viele Mitarbeiter kurz vor der Rente (Risiko von Wissensverlust) und mangelnde digitale Kompetenzen sind interne Schwächen (Debilidades) im DAFO. Sie zeigen Handlungsbedarf in Wissensmanagement und digitaler Weiterbildung." },
-    { cat:"Reskilling", text:"Ein Kassierer lernt Logistik und Lagerverwaltung und wechselt in eine andere Abteilung. Was ist das?",
-      opts:["Upskilling","Reskilling","Onboarding","People Analytics"],
-      c:1, ex:"Das ist Reskilling: das Erlernen komplett neuer Fähigkeiten um in einen anderen Beruf oder eine andere Abteilung zu wechseln. Beim Upskilling hingegen bleibt man im selben Job und verbessert vorhandene Fähigkeiten." },
-    { cat:"Konsequenzen", text:"Was passiert, wenn RRHH keinen Wettbewerbsvorteil generiert?",
-      opts:["Das Unternehmen wächst organisch und ohne Probleme","Hohe Fluktuation, schlechtes Klima, Schwierigkeiten Talente anzuziehen, mangelndes Engagement und unzufriedene Kunden","Mitarbeiter werden selbstständiger","Die Gehälter sinken automatisch"],
-      c:1, ex:"Wenn RRHH keinen Wettbewerbsvorteil schafft, folgen: hohe Fluktuation, schlechtes Klima, Schwierigkeit Talente zu finden, fehlende Bindung der Mitarbeiter und letztlich unzufriedene Kunden – ein Teufelskreis." }
-  ],
-  gold: [
-    { cat:"Strategische Ziele", text:"Ein Unternehmen setzt sich das Ziel: 'In 3 Jahren wollen wir Arbeitgebermarke Nr. 1 für junge Talente in unserer Branche sein.' Welchem Zielniveau entspricht das?",
-      opts:["Operativer Zielebene","Taktischer Zielebene","Strategischer Zielebene","Keiner Zielebene, da nicht messbar"],
-      c:2, ex:"Das ist ein strategisches Ziel (largo plazo): Es bezieht sich auf die Vision des Unternehmens, hat einen Horizont von mehreren Jahren und gibt die Richtung vor. Taktische Ziele wären konkrete Maßnahmen, operative wären wöchentliche Aktivitäten." },
-    { cat:"KPI-Interpretation", text:"Die freiwillige Fluktuation (rotación voluntaria) in einem Unternehmen steigt stark an. Was deutet das wahrscheinlich an?",
-      opts:["Das Recruiting ist sehr erfolgreich","Probleme mit Klima, Führung, Gehalt oder mangelnde Entwicklungsmöglichkeiten","Das Unternehmen expandiert stark","Die Mitarbeiter sind zu alt"],
-      c:1, ex:"Hohe freiwillige Fluktuation (die Mitarbeiter entscheiden zu gehen) deutet auf interne Probleme hin: schlechtes Klima, mangelnde Führungsqualität, uncompetitive Gehälter oder fehlende Karriereperspektiven. RRHH muss die Ursachen analysieren." },
-    { cat:"Strategische Verknüpfung", text:"Welcher Kausalzusammenhang ist korrekt?",
-      opts:["Mehr Überstunden → mehr Umsatz → höhere Mitarbeiterzufriedenheit","Besseres Klima → weniger Fluktuation und Absentismus → weniger Kosten → mehr Stabilität","Mehr Recruiting → bessere Produkte → zufriedene Kunden","Höhere Gehälter → automatisch mehr Engagement"],
-      c:1, ex:"Die korrekte strategische Kausalkette: Besseres Klima führt zu weniger Krankenständen und Fluktuation, was Kosten reduziert und Stabilität schafft. RRHH muss diese Zusammenhänge nutzen, um Investitionen in Klima zu rechtfertigen." },
-    { cat:"Planungsarten", text:"Was ist der Unterschied zwischen quantitativer und qualitativer HR-Planung?",
-      opts:["Quantitativ = für große Unternehmen; qualitativ = für kleine Unternehmen","Quantitativ = wie viele Personen werden gebraucht; qualitativ = welches Profil und welche Kompetenzen werden gebraucht","Quantitativ = Gehaltsplanung; qualitativ = Kulturplanung","Quantitativ = kurzfristig; qualitativ = langfristig"],
-      c:1, ex:"Quantitative HR-Planung fragt: Wie viele Personen brauchen wir? Qualitative HR-Planung fragt: Welche Art von Personen, mit welchem Profil und welchen Kompetenzen? Eine gute Planung kombiniert immer beides." },
-    { cat:"Innovationsorientierung", text:"Ein Unternehmen will innovativer werden. Welche HR-Maßnahmen sind strategisch am sinnvollsten?",
-      opts:["Strengere Kontrolle und mehr Hierarchieebenen einführen","Diverse Teams fördern, Kreativitätsräume schaffen, Fehlertoleranz etablieren und neue Ideen anerkennen","Überstunden einführen und Leistungsdruck erhöhen","Ältere Mitarbeiter entlassen und nur junge einstellen"],
-      c:1, ex:"Für Innovation braucht RRHH: diverse Teams (unterschiedliche Altersgruppen, Profile, Kulturen), kreative Räume und Fehlertoleranz sowie Anerkennungssysteme für neue Ideen. Innovation entsteht durch psychologische Sicherheit, nicht durch Druck." },
-    { cat:"Externe Analyse", text:"Was wird bei der externen HR-Analyse untersucht?",
-      opts:["Nur die internen Kompetenzen der Belegschaft","Arbeitsmarkt, Technologie-Trends, Arbeitsrecht und soziale Faktoren (Erwartungen, Generationenvielfalt)","Nur die Gehälter der Konkurrenz","Ausschließlich neue Stellenangebote auf dem Markt"],
-      c:1, ex:"Die externe Analyse betrachtet: 1) Arbeitsmarkt, 2) Technologie (Automatisierung, neue Tools), 3) Arbeitsrecht (Änderungen), 4) Soziale Faktoren (Erwartungen zu Flexibilität, Generationenvielfalt). Sie zeigt Chancen und Bedrohungen." },
-    { cat:"HR-Ziele", text:"Warum ist es problematisch, wenn RRHH keine klaren Ziele hat?",
-      opts:["Es ist kein Problem, Intuition reicht in RRHH aus","Maßnahmen werden ohne klaren Nutzen durchgeführt, Geld wird verschwendet, Talente gehen verloren und Fehler wiederholen sich","Mitarbeiter werden selbstständiger und produktiver","Es entstehen mehr kreative Lösungen"],
-      c:1, ex:"Ohne klare HR-Ziele: sinnlose Maßnahmen werden durchgeführt, Geld wird ohne messbaren Ertrag ausgegeben, wertvolle Menschen verlassen das Unternehmen ohne dass man versteht warum, und dieselben Fehler wiederholen sich ständig." },
-    { cat:"People Analyst", text:"Ein People Analyst bemerkt, dass in einer Abteilung die Fluktuation und der Absentismus deutlich höher sind. Was sollte sein nächster Schritt sein?",
-      opts:["Sofort alle Mitarbeiter dieser Abteilung entlassen","Die Daten verwerfen – Abweichungen sind normal","Die Ursachen analysieren (Führungsstil, Arbeitsbelastung, Klima) und konkrete Maßnahmen vorschlagen","Die Abteilung einfach mit einer anderen zusammenlegen"],
-      c:2, ex:"Der People Analyst muss Indikatoren nicht nur 'sehen', sondern interpretieren: Warum gibt es mehr Fluktuation genau dort? Mögliche Ursachen: Führungsprobleme, Überlastung, schlechtes Klima. Dann konkrete Maßnahmen vorschlagen." },
-    { cat:"Transformationsphasen", text:"Ein Unternehmen wechselt von starrer Hierarchie zu partizipativer Kultur. Welche Instrumente setzt RRHH dabei ein?",
-      opts:["Nur neue Büros einrichten und Dresscode ändern","Interne Kommunikation, Führungskräfteentwicklung, Teilhabe der Mitarbeiter am Wandel und Messung des Fortschritts","Ausschließlich externe Berater beauftragen","Mitarbeiter anweisen, sich zu ändern und Ergebnis abwarten"],
-      c:1, ex:"RRHH nutzt für Kulturwandel: 1) Interne Kommunikation (Warum der Wandel?), 2) Formación (Führungskräfte ausbilden), 3) Partizipation (Mitarbeiter einbeziehen), 4) Messung (Klima-Umfragen, Impact-Indikatoren). Wandel braucht Begleitung." },
-    { cat:"Meisterklasse", text:"Ein Unternehmen möchte international expandieren. Welche konkreten HR-Maßnahmen sind strategisch notwendig?",
-      opts:["Einfach mehr Mitarbeiter einstellen und hoffen, dass es klappt","Profile mit Sprachkenntnissen identifizieren, interkulturelle Kompetenzen entwickeln, Mobilitätspolitiken gestalten und Führungskräfte für diverse Teams ausbilden","Alle Mitarbeiter ins Ausland schicken","Nur externe Experten für das Auslandsgeschäft einstellen"],
-      c:1, ex:"Bei internationaler Expansion muss RRHH: Sprachprofile suchen, interkulturelle Kompetenzentwicklung planen (Upskilling), Richtlinien für internationale Mobilität entwickeln und Führungskräfte befähigen diverse internationale Teams zu leiten." }
-  ]
+  bronze: [
+    { cat:"Grundkonzept", text:"Was ist die Dirección Estratégica de RRHH?",
+      opts:["Ein reines Verwaltungssystem für Gehaltsabrechnungen","Ein Ansatz, der Personalmanagement in den Kern der Unternehmensstrategie integriert","Eine Abteilung, die nur Arbeitsverträge bearbeitet","Ein externes Beratungsunternehmen für Recruiting"],
+      c:1, ex:"Die Strategische HR-Direktion ist kein reines Verwaltungsinstrument – sie beeinflusst direkt Wettbewerbsfähigkeit, Innovation und Nachhaltigkeit der Organisation." },
+    { cat:"Evolutionsstufen", text:"Welche drei Hauptphasen hat die Entwicklung von RRHH durchlaufen?",
+      opts:["Digitalisierung → Automatisierung → Künstliche Intelligenz","Personalverwaltung (reaktiv) → HR-Management (funktional) → Strategische HR-Direktion (proaktiv & analytisch)","Recruiting → Training → Retention","Administration → Kommunikation → Strategie"],
+      c:1, ex:"RRHH durchlief drei große Etappen: zuerst reine Personalverwaltung (reaktiv), dann funktionales HR-Management, und schließlich die strategische Direktion mit proaktivem und analytischem Ansatz." },
+    { cat:"Reaktiver Ansatz", text:"Was charakterisiert den reaktiven Ansatz (Etappe 1) von RRHH?",
+      opts:["Vorausschauende Planung und Datenanalyse","Aktive Teilnahme am Managementkomitee","Nur handeln wenn ein Problem auftritt – Verträge, Gehaltsabrechnungen, kein strategisches Denken","Entwicklung umfassender Entwicklungspläne für Mitarbeiter"],
+      c:2, ex:"In der reaktiven Phase wartete RRHH auf Probleme, bevor gehandelt wurde. Keine Vorausplanung, keine Datenanalyse – nur administrative Aufgaben wie Verträge und Gehaltsabrechnungen." },
+    { cat:"Unternehmensstrategie", text:"Welche Aussage beschreibt korrekt den Ausgangspunkt jeder HR-Strategie?",
+      opts:["Die HR-Strategie entsteht unabhängig vom Unternehmensmodell","Jede HR-Strategie leitet sich aus der Unternehmensstrategie ab","HR-Strategien werden ausschließlich von Gewerkschaften definiert","Die Marktlage ist der einzige Ausgangspunkt"],
+      c:1, ex:"Jede HR-Strategie entsteht aus der Unternehmensstrategie heraus. RRHH muss das Geschäftsmodell verstehen, die kritischen Erfolgsfaktoren identifizieren und diese in Talentbedarf übersetzen." },
+    { cat:"Proaktiver Ansatz", text:"Was bedeutet es, in RRHH 'proaktiv' zu sein?",
+      opts:["Warten bis ein Mitarbeiter kündigt, bevor man sucht","Probleme antizipieren bevor sie auftreten, z.B. Personalbedarf im Voraus planen","Schnell auf bestehende Probleme reagieren","Externe Berater für alle Entscheidungen einsetzen"],
+      c:1, ex:"Proaktiv zu sein bedeutet, Problemen zuvorzukommen bevor sie entstehen. Nicht warten bis Personal fehlt, sondern es vorausplanen. Wie die Heizung vor dem Winter prüfen, nicht wenn sie im Winter ausfällt." },
+    { cat:"Upskilling & Reskilling", text:"Was ist der Unterschied zwischen Upskilling und Reskilling?",
+      opts:["Es gibt keinen Unterschied – beide Begriffe bedeuten dasselbe","Upskilling = bestehende Fähigkeiten verbessern (im selben Beruf); Reskilling = neue Fähigkeiten für einen anderen Beruf erlernen","Upskilling betrifft Führungskräfte, Reskilling betrifft Mitarbeiter","Reskilling ist teurer als Upskilling"],
+      c:1, ex:"Upskilling verbessert vorhandene Fähigkeiten im selben Job. Reskilling erlernt komplett neue Kompetenzen für einen anderen Job. Beide sind 2026 entscheidend für Unternehmen." },
+    { cat:"Digitalisierung", text:"Was kann KI und digitale Systeme in RRHH bereits automatisieren?",
+      opts:["Nur Gehaltsabrechnungen","Lebenslauf-Screening, Gehaltsabrechnung, Zeiterfassung, automatische Antworten, Interview-Planung","Nur die Kommunikation mit Gewerkschaften","Lediglich die Urlaubsverwaltung"],
+      c:1, ex:"KI und digitale Systeme automatisieren bereits: Lebenslauf-Screening, Gehaltsabrechnung, Zeiterfassung, automatische Antworten auf häufige Fragen und Interview-Terminierung. Das befreit RRHH für strategischere Aufgaben." },
+    { cat:"HR Business Partner", text:"Was macht ein HR Business Partner (HRBP)?",
+      opts:["Er verhandelt ausschließlich mit Gewerkschaften","Er ist eine HR-Person, die einem spezifischen Geschäftsbereich zugewiesen wird und als interner Berater fungiert","Er analysiert nur Finanzkennzahlen","Er ist für die externe Rekrutierung zuständig"],
+      c:1, ex:"Der HRBP ist wie ein 'vertrauenswürdiges RRHH' für einen spezifischen Bereich. Er kennt diesen Bereich sehr gut und hilft Führungskräften bei Selektion, Entwicklung, Konfliktlösung und Personalplanung." },
+    { cat:"People Analytics", text:"Was versteht man unter 'People Analytics'?",
+      opts:["Persönliche Gespräche mit allen Mitarbeitern führen","Datenbasierte Analyse von Personalinformationen (Fluktuation, Burnout-Risiko, Entwicklungsbedarf)","Das Sammeln von Lebensläufen","Die manuelle Berechnung von Gehältern"],
+      c:1, ex:"People Analytics bedeutet: Daten über Personen analysieren – ähnlich wie Marketing oder Finanzen. Damit kann RRHH vorhersagen, wer die Firma verlassen könnte, Burnout-Risiken erkennen und optimale Weiterbildungsmaßnahmen identifizieren." },
+    { cat:"Neue Arbeitsformen", text:"Welche neuen Arbeitsformen sind 2026 zur Normalität geworden?",
+      opts:["Ausschließlich Büroarbeit 9-17 Uhr","Homeoffice, Hybrid-Arbeit, verteilte Teams, flexible Zeiten und projektbasiertes Arbeiten","Nur Schichtarbeit in Produktionsbetrieben","Vier-Tage-Woche als einziges Modell"],
+      c:1, ex:"Die Pandemie beschleunigte Veränderungen, die 2026 normal sind: Homeoffice, hybrides Arbeiten, verteilte Teams, flexible Arbeitszeiten und projektbasiertes Arbeiten. RRHH muss Richtlinien für diese neue Realität entwickeln." }
+  ],
+  silver: [
+    { cat:"Wettbewerbsvorteil", text:"Welche drei Bedingungen müssen erfüllt sein, damit Menschen einen echten Wettbewerbsvorteil darstellen?",
+      opts:["Günstig, schnell verfügbar und leicht ersetzbar sein","Schwer imitierbar, wertschöpfend organisiert und zeitlich nachhaltig sein","Jung, digital-affin und gut ausgebildet sein","Aus der Region stammen, loyal sein und lange im Unternehmen bleiben"],
+      c:1, ex:"Menschen sind Wettbewerbsvorteil wenn sie: schwer imitierbar sind (Kombination aus Talent + Kultur + Leadership), wertschöpfend organisiert werden und nachhaltig im Laufe der Zeit sind." },
+    { cat:"Transformationsagent", text:"Warum wird RRHH als 'Transformationsagent' bezeichnet?",
+      opts:["Weil RRHH Umstrukturierungen ohne Zustimmung der Mitarbeiter durchführen kann","Weil RRHH als Brücke zwischen Unternehmensführung und Mitarbeitern fungiert und Veränderungen aktiv begleitet","Weil RRHH externe Berater beauftragt","Weil RRHH für IT-Implementierungen verantwortlich ist"],
+      c:1, ex:"Als Transformationsagent beschränkt sich RRHH nicht auf 'das verwalten was ist', sondern treibt Veränderungen an, begleitet Menschen durch diese, reduziert Widerstände und hilft dem Unternehmen, sich anzupassen." },
+    { cat:"HR-Planung", text:"Was ist das Kernziel der strategischen HR-Planung?",
+      opts:["Möglichst viele Mitarbeiter einzustellen","Sicherzustellen, dass das Unternehmen zum richtigen Zeitpunkt die richtigen Personen mit den richtigen Fähigkeiten hat","Die Personalkosten zu minimieren","Alle offenen Stellen sofort zu besetzen"],
+      c:1, ex:"HR-Planung bedeutet vorausdenken: Wer wird gebraucht? Mit welchem Profil? Wann? Nicht 'Feuer löschen', sondern vorbeugen und vorbereiten – Planung statt Reaktion." },
+    { cat:"Planungsphasen", text:"In welcher Reihenfolge erfolgen die Phasen der strategischen HR-Planung?",
+      opts:["Maßnahmenplan → Diagnose → Interner Analyse → Ziele setzen","Interner Analyse → Externer Analyse → Diagnose (SWOT) → Ziele → Maßnahmenplan → Evaluation","Ziele setzen → Stellen besetzen → Erfolg messen","Externer Analyse → Recruiting → Training → Evaluation"],
+      c:1, ex:"Die korrekte Reihenfolge ist: 1) Interner Analyse, 2) Externer Analyse, 3) Diagnose/SWOT, 4) Ziele definieren, 5) Maßnahmenpläne entwickeln, 6) Evaluation und Kontrolle." },
+    { cat:"Rekrutierung", text:"Was ist die Aufgabe des Bereichs 'Selección y Reclutamiento'?",
+      opts:["Nur Stellenanzeigen veröffentlichen","Den gesamten Auswahlprozess steuern: Profildefinition, Inserate, CV-Screening, Interviews, Onboarding","Ausschließlich interne Versetzungen verwalten","Gehaltsverhandlungen führen"],
+      c:1, ex:"Die Rekrutierungsabteilung kümmert sich um: Profilanalyse, Stellenanzeigen, Lebenslauf-Prüfung, Interviews und Tests, Koordination mit Führungskräften und Onboarding-Prozess. Wichtig: nicht nur Fachkompetenz, sondern auch Kultur-Fit." },
+    { cat:"Interner Analyse", text:"Welche vier Bereiche werden bei der internen HR-Analyse untersucht?",
+      opts:["Budget, Technologie, Konkurrenz und Markttrends","Aktuelle Belegschaft, Kompetenzen, Arbeitsklima/Engagement und HR-Prozesse","Gehalt, Urlaub, Krankheitstage und Produktivität","Recruiting, Onboarding, Training und Offboarding"],
+      c:1, ex:"Die interne Analyse betrachtet: 1) Aktuelle Belegschaft (Anzahl, Alter, Seniorität), 2) Kompetenzen (was kann die Belegschaft?), 3) Klima und Engagement und 4) HR-Prozesse (funktionieren sie gut?)." },
+    { cat:"Kulturelle Transformation", text:"Was bedeutet 'Kulturelle Transformation' und welche Rolle spielt RRHH dabei?",
+      opts:["Neue Büromöbel kaufen und das Logo ändern","Werte und Verhaltensweisen wandeln; RRHH definiert Zielwerte, gestaltet Maßnahmen und misst die reale Kultur","Mitarbeiter aus anderen Ländern einstellen","Die Unternehmensstruktur flach machen"],
+      c:1, ex:"Kulturelle Transformation bedeutet Wandel von Werten, Normen und Verhaltensweisen. RRHH definiert gemeinsam mit der Führung die gewünschten Werte, gestaltet Maßnahmen zur Stärkung und misst Klima und echte Kultur." },
+    { cat:"DAFO-Analyse", text:"Ein Unternehmen hat viele Mitarbeiter kurz vor der Rente und schlechte digitale Kompetenzen. Was sind das im DAFO?",
+      opts:["Stärken (Fortalezas)","Chancen (Oportunidades)","Schwächen (Debilidades)","Bedrohungen (Amenazas)"],
+      c:2, ex:"Viele Mitarbeiter kurz vor der Rente (Risiko von Wissensverlust) und mangelnde digitale Kompetenzen sind interne Schwächen (Debilidades) im DAFO. Sie zeigen Handlungsbedarf in Wissensmanagement und digitaler Weiterbildung." },
+    { cat:"Reskilling", text:"Ein Kassierer lernt Logistik und Lagerverwaltung und wechselt in eine andere Abteilung. Was ist das?",
+      opts:["Upskilling","Reskilling","Onboarding","People Analytics"],
+      c:1, ex:"Das ist Reskilling: das Erlernen komplett neuer Fähigkeiten um in einen anderen Beruf oder eine andere Abteilung zu wechseln. Beim Upskilling hingegen bleibt man im selben Job und verbessert vorhandene Fähigkeiten." },
+    { cat:"Konsequenzen", text:"Was passiert, wenn RRHH keinen Wettbewerbsvorteil generiert?",
+      opts:["Das Unternehmen wächst organisch und ohne Probleme","Hohe Fluktuation, schlechtes Klima, Schwierigkeiten Talente anzuziehen, mangelndes Engagement und unzufriedene Kunden","Mitarbeiter werden selbstständiger","Die Gehälter sinken automatisch"],
+      c:1, ex:"Wenn RRHH keinen Wettbewerbsvorteil schafft, folgen: hohe Fluktuation, schlechtes Klima, Schwierigkeit Talente zu finden, fehlende Bindung der Mitarbeiter und letztlich unzufriedene Kunden – ein Teufelskreis." }
+  ],
+  gold: [
+    { cat:"Strategische Ziele", text:"Ein Unternehmen setzt sich das Ziel: 'In 3 Jahren wollen wir Arbeitgebermarke Nr. 1 für junge Talente in unserer Branche sein.' Welchem Zielniveau entspricht das?",
+      opts:["Operativer Zielebene","Taktischer Zielebene","Strategischer Zielebene","Keiner Zielebene, da nicht messbar"],
+      c:2, ex:"Das ist ein strategisches Ziel (largo plazo): Es bezieht sich auf die Vision des Unternehmens, hat einen Horizont von mehreren Jahren und gibt die Richtung vor. Taktische Ziele wären konkrete Maßnahmen, operative wären wöchentliche Aktivitäten." },
+    { cat:"KPI-Interpretation", text:"Die freiwillige Fluktuation (rotación voluntaria) in einem Unternehmen steigt stark an. Was deutet das wahrscheinlich an?",
+      opts:["Das Recruiting ist sehr erfolgreich","Probleme mit Klima, Führung, Gehalt oder mangelnde Entwicklungsmöglichkeiten","Das Unternehmen expandiert stark","Die Mitarbeiter sind zu alt"],
+      c:1, ex:"Hohe freiwillige Fluktuation (die Mitarbeiter entscheiden zu gehen) deutet auf interne Probleme hin: schlechtes Klima, mangelnde Führungsqualität, uncompetitive Gehälter oder fehlende Karriereperspektiven. RRHH muss die Ursachen analysieren." },
+    { cat:"Strategische Verknüpfung", text:"Welcher Kausalzusammenhang ist korrekt?",
+      opts:["Mehr Überstunden → mehr Umsatz → höhere Mitarbeiterzufriedenheit","Besseres Klima → weniger Fluktuation und Absentismus → weniger Kosten → mehr Stabilität","Mehr Recruiting → bessere Produkte → zufriedene Kunden","Höhere Gehälter → automatisch mehr Engagement"],
+      c:1, ex:"Die korrekte strategische Kausalkette: Besseres Klima führt zu weniger Krankenständen und Fluktuation, was Kosten reduziert und Stabilität schafft. RRHH muss diese Zusammenhänge nutzen, um Investitionen in Klima zu rechtfertigen." },
+    { cat:"Planungsarten", text:"Was ist der Unterschied zwischen quantitativer und qualitativer HR-Planung?",
+      opts:["Quantitativ = für große Unternehmen; qualitativ = für kleine Unternehmen","Quantitativ = wie viele Personen werden gebraucht; qualitativ = welches Profil und welche Kompetenzen werden gebraucht","Quantitativ = Gehaltsplanung; qualitativ = Kulturplanung","Quantitativ = kurzfristig; qualitativ = langfristig"],
+      c:1, ex:"Quantitative HR-Planung fragt: Wie viele Personen brauchen wir? Qualitative HR-Planung fragt: Welche Art von Personen, mit welchem Profil und welchen Kompetenzen? Eine gute Planung kombiniert immer beides." },
+    { cat:"Innovationsorientierung", text:"Ein Unternehmen will innovativer werden. Welche HR-Maßnahmen sind strategisch am sinnvollsten?",
+      opts:["Strengere Kontrolle und mehr Hierarchieebenen einführen","Diverse Teams fördern, Kreativitätsräume schaffen, Fehlertoleranz etablieren und neue Ideen anerkennen","Überstunden einführen und Leistungsdruck erhöhen","Ältere Mitarbeiter entlassen und nur junge einstellen"],
+      c:1, ex:"Für Innovation braucht RRHH: diverse Teams (unterschiedliche Altersgruppen, Profile, Kulturen), kreative Räume und Fehlertoleranz sowie Anerkennungssysteme für neue Ideen. Innovation entsteht durch psychologische Sicherheit, nicht durch Druck." },
+    { cat:"Externe Analyse", text:"Was wird bei der externen HR-Analyse untersucht?",
+      opts:["Nur die internen Kompetenzen der Belegschaft","Arbeitsmarkt, Technologie-Trends, Arbeitsrecht und soziale Faktoren (Erwartungen, Generationenvielfalt)","Nur die Gehälter der Konkurrenz","Ausschließlich neue Stellenangebote auf dem Markt"],
+      c:1, ex:"Die externe Analyse betrachtet: 1) Arbeitsmarkt, 2) Technologie (Automatisierung, neue Tools), 3) Arbeitsrecht (Änderungen), 4) Soziale Faktoren (Erwartungen zu Flexibilität, Generationenvielfalt). Sie zeigt Chancen und Bedrohungen." },
+    { cat:"HR-Ziele", text:"Warum ist es problematisch, wenn RRHH keine klaren Ziele hat?",
+      opts:["Es ist kein Problem, Intuition reicht in RRHH aus","Maßnahmen werden ohne klaren Nutzen durchgeführt, Geld wird verschwendet, Talente gehen verloren und Fehler wiederholen sich","Mitarbeiter werden selbstständiger und produktiver","Es entstehen mehr kreative Lösungen"],
+      c:1, ex:"Ohne klare HR-Ziele: sinnlose Maßnahmen werden durchgeführt, Geld wird ohne messbaren Ertrag ausgegeben, wertvolle Menschen verlassen das Unternehmen ohne dass man versteht warum, und dieselben Fehler wiederholen sich ständig." },
+    { cat:"People Analyst", text:"Ein People Analyst bemerkt, dass in einer Abteilung die Fluktuation und der Absentismus deutlich höher sind. Was sollte sein nächster Schritt sein?",
+      opts:["Sofort alle Mitarbeiter dieser Abteilung entlassen","Die Daten verwerfen – Abweichungen sind normal","Die Ursachen analysieren (Führungsstil, Arbeitsbelastung, Klima) und konkrete Maßnahmen vorschlagen","Die Abteilung einfach mit einer anderen zusammenlegen"],
+      c:2, ex:"Der People Analyst muss Indikatoren nicht nur 'sehen', sondern interpretieren: Warum gibt es mehr Fluktuation genau dort? Mögliche Ursachen: Führungsprobleme, Überlastung, schlechtes Klima. Dann konkrete Maßnahmen vorschlagen." },
+    { cat:"Transformationsphasen", text:"Ein Unternehmen wechselt von starrer Hierarchie zu partizipativer Kultur. Welche Instrumente setzt RRHH dabei ein?",
+      opts:["Nur neue Büros einrichten und Dresscode ändern","Interne Kommunikation, Führungskräfteentwicklung, Teilhabe der Mitarbeiter am Wandel und Messung des Fortschritts","Ausschließlich externe Berater beauftragen","Mitarbeiter anweisen, sich zu ändern und Ergebnis abwarten"],
+      c:1, ex:"RRHH nutzt für Kulturwandel: 1) Interne Kommunikation (Warum der Wandel?), 2) Formación (Führungskräfte ausbilden), 3) Partizipation (Mitarbeiter einbeziehen), 4) Messung (Klima-Umfragen, Impact-Indikatoren). Wandel braucht Begleitung." },
+    { cat:"Meisterklasse", text:"Ein Unternehmen möchte international expandieren. Welche konkreten HR-Maßnahmen sind strategisch notwendig?",
+      opts:["Einfach mehr Mitarbeiter einstellen und hoffen, dass es klappt","Profile mit Sprachkenntnissen identifizieren, interkulturelle Kompetenzen entwickeln, Mobilitätspolitiken gestalten und Führungskräfte für diverse Teams ausbilden","Alle Mitarbeiter ins Ausland schicken","Nur externe Experten für das Auslandsgeschäft einstellen"],
+      c:1, ex:"Bei internationaler Expansion muss RRHH: Sprachprofile suchen, interkulturelle Kompetenzentwicklung planen (Upskilling), Richtlinien für internationale Mobilität entwickeln und Führungskräfte befähigen diverse internationale Teams zu leiten." }
+  ]
 };
 
 const CFG = {
 bronze: { label:‘Level 1 — Grundlagen’, badge:‘🥉 Grundlagen’, bc:‘bronze’, medal:‘🥉’, rank:‘BRONZE MEDAILLE’, title:‘Du bist jetzt HR Assistent!’, desc:‘Du hast die Grundlagen der strategischen HR-Direktion gemeistert! Du kennst die drei Entwicklungsphasen und die wichtigsten Konzepte. Weiter zum nächsten Level!’, pts:10 },
 silver: { label:‘Level 2 — Vertiefung’, badge:‘🥈 Vertiefung’, bc:‘silver’, medal:‘🥈’, rank:‘SILBER MEDAILLE’, title:‘Du bist jetzt HR Specialist!’, desc:‘Hervorragend! Du verstehst Planungsprozesse, Organisationsstrukturen und Transformationsmanagement auf einem professionellen Niveau. Bereit für das Gold-Level!’, pts:20 },
-gold:   { label:‘Level 3 — Exzellenz’, badge:‘🥇 Exzellenz’, bc:‘gold’, medal:‘🥇’, rank:‘GOLD MEDAILLE’, title:‘Du bist jetzt HR Director!’, desc:‘Außergewöhnlich! Du denkst und handelst wie ein echter HR Director. KPIs, strategische Ziele, Wettbewerbsvorteile – alles sitzt. Ein letzter Schritt zum HR Manager!’, pts:30 }
+gold:   { label:‘Level 3 — Exzellenz’, badge:‘🥇 Exzellenz’, bc:‘gold’, medal:‘🥇’, rank:‘GOLD MEDAILLE’, title:‘Du bist jetzt HR Director!’, desc:‘Außergewöhnlich! Du denkst und handelst wie ein echter HR Director. KPIs, strategische Ziele, Wettbewerbsvorteile – alles sitzt. Ein letzter Schritt zum HR Manager!’, pts:30 }
 };
 
 let S = {
@@ -458,8 +458,8 @@ const m = S.medals;
 let cur = 0;
 if (m.includes(‘bronze’)) cur = 1;
 if (m.includes(‘silver’)) cur = 2;
-if (m.includes(‘gold’))   cur = 3;
-if (m.length === 3)       cur = 4;
+if (m.includes(‘gold’))   cur = 3;
+if (m.length === 3)       cur = 4;
 [0,1,2,3,4].forEach(i => {
 const el = document.getElementById(‘hs’+i);
 el.classList.remove(‘earned’,‘current’);
@@ -473,7 +473,7 @@ const c = document.getElementById(‘earned-medals’);
 c.innerHTML = ‘’;
 if (S.medals.includes(‘bronze’)) c.innerHTML += ‘<span class="earned-medal-tag bt">🥉 Bronze · HR Assistent</span>’;
 if (S.medals.includes(‘silver’)) c.innerHTML += ‘<span class="earned-medal-tag st">🥈 Silber · HR Specialist</span>’;
-if (S.medals.includes(‘gold’))   c.innerHTML += ‘<span class="earned-medal-tag gt">🥇 Gold · HR Director</span>’;
+if (S.medals.includes(‘gold’))   c.innerHTML += ‘<span class="earned-medal-tag gt">🥇 Gold · HR Director</span>’;
 }
 
 function startQuiz(level) {
