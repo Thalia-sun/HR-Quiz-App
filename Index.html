@@ -3,106 +3,92 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HR Manager Quiz — RRHH Dirección Estratégica</title>
+<title>HR Quiz Academy</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-:root {
-  --gold: #C9A84C;
-  --gold-light: #E8C96A;
-  --dark: #0F0F0F;
-  --dark-2: #1A1A1A;
-  --dark-3: #242424;
-  --dark-4: #2E2E2E;
-  --cream: #F5F0E8;
-  --cream-dim: #D4CFC7;
-  --green: #4CAF7A;
-  --red: #E05252;
-  --silver: #A8A8A8;
-  --bronze: #CD7F32;
-}
-
-* { margin:0; padding:0; box-sizing:border-box; }
-
 body {
-  background: var(--dark);
-  color: var(--cream);
-  font-family: 'DM Sans', sans-serif;
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-.bg-pattern {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  background:
-    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(201,168,76,0.06), transparent 60%),
-    radial-gradient(ellipse 60% 80% at 80% 90%, rgba(74,144,217,0.04), transparent 60%);
-  pointer-events: none;
+  margin:0;
+  background:#0f0f0f;
+  color:#f5f0e8;
+  font-family:'Inter',sans-serif;
+  display:flex;
+  justify-content:center;
+  padding:40px;
 }
 
 .app {
-  position: relative;
-  z-index: 1;
-  max-width: 860px;
-  margin: 0 auto;
-  padding: 40px 20px;
+  max-width:700px;
+  width:100%;
 }
 
-.screen { display:none; }
-.screen.active { display:block; }
+h1 {
+  font-family:'Playfair Display',serif;
+  text-align:center;
+  font-size:48px;
+}
 
-.brand { text-align:center; margin-bottom:50px; }
+h1 span { color:#C9A84C; }
 
-.brand-tag {
-  font-size: 11px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: var(--gold);
-  border: 1px solid rgba(201,168,76,0.3);
-  display:inline-block;
-  padding:6px 16px;
+.levels {
+  display:grid;
+  gap:15px;
+  margin-top:40px;
+}
+
+.level {
+  background:#1a1a1a;
+  padding:20px;
+  border-radius:12px;
+  cursor:pointer;
+  transition:0.2s;
+}
+
+.level:hover {
+  transform:translateY(-3px);
+  border:1px solid #C9A84C;
+}
+
+.card {
+  background:#1a1a1a;
+  padding:25px;
+  border-radius:12px;
+}
+
+.question {
+  font-size:20px;
   margin-bottom:20px;
 }
 
-.brand h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(36px,7vw,62px);
-  font-weight:900;
+.answers button {
+  width:100%;
+  margin:8px 0;
+  padding:12px;
+  border:none;
+  border-radius:8px;
+  background:#242424;
+  color:white;
+  cursor:pointer;
 }
 
-.brand h1 span { color: var(--gold); }
-
-.level-card {
-  background: var(--dark-2);
-  padding: 24px;
-  border-radius: 12px;
-  cursor: pointer;
+.answers button:hover {
+  border:1px solid #C9A84C;
 }
 
-.option-btn {
-  background: var(--dark-3);
-  border: 1px solid rgba(255,255,255,0.07);
-  padding: 14px;
-  color: var(--cream);
-  cursor: pointer;
+.correct { background:#4CAF7A; }
+.wrong { background:#E05252; }
+
+.next {
+  margin-top:15px;
+  padding:12px;
+  width:100%;
+  background:#C9A84C;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  display:none;
 }
-
-.option-btn.correct { border-color: var(--green); }
-.option-btn.wrong { border-color: var(--red); }
-
-.btn {
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-.btn-gold {
-  background: linear-gradient(135deg,var(--gold),var(--gold-light));
-}
-
 </style>
 </head>
 
@@ -110,112 +96,100 @@ body {
 
 <div class="app">
 
-  <div id="screen-home" class="screen active">
-    <div class="brand">
-      <div class="brand-tag">ADGD0031 Modul 1</div>
-      <h1>RRHH <span>Quiz</span></h1>
-      <p>Strategisches HR Training</p>
-    </div>
+<div id="home">
+  <h1>RRHH <span>Quiz</span></h1>
 
-    <div class="level-card" onclick="startQuiz('bronze')">Level 1 Grundlagen</div>
-    <div class="level-card" onclick="startQuiz('silver')">Level 2 Vertiefung</div>
-    <div class="level-card" onclick="startQuiz('gold')">Level 3 Exzellenz</div>
+  <div class="levels">
+    <div class="level" onclick="start('easy')">🥉 Grundlagen</div>
+    <div class="level" onclick="start('mid')">🥈 Vertiefung</div>
   </div>
+</div>
 
-  <div id="screen-quiz" class="screen">
-    <h2 id="question-text"></h2>
-    <div id="options"></div>
-    <button class="btn btn-gold" id="next-btn" onclick="nextQuestion()" style="display:none">Weiter</button>
+<div id="quiz" style="display:none">
+  <div class="card">
+    <div id="question" class="question"></div>
+    <div id="answers" class="answers"></div>
+    <button id="next" class="next">Weiter</button>
   </div>
+</div>
 
 </div>
 
 <script>
-const Q = {
-  bronze: [
+const data = {
+  easy: [
     {
-      cat:"HR",
-      text:"Was ist strategisches HR?",
-      opts:[
-        "Nur Gehaltsabrechnung",
-        "Integration in Unternehmensstrategie",
-        "Nur Verwaltung",
-        "Externe Beratung"
-      ],
-      c:1,
-      ex:"Strategisches HR ist Teil der Unternehmensstrategie."
+      q: "Was ist strategisches HR?",
+      a: ["Verwaltung", "Teil der Unternehmensstrategie", "Nur Recruiting", "IT System"],
+      c: 1
+    },
+    {
+      q: "Was bedeutet proaktiv?",
+      a: ["Abwarten", "Vorausplanen", "Ignorieren", "Delegieren"],
+      c: 1
+    }
+  ],
+  mid: [
+    {
+      q: "Was ist HR Planung?",
+      a: ["Zufällig einstellen", "Richtige Leute zur richtigen Zeit", "Nur Kosten sparen", "Nur Recruiting"],
+      c: 1
     }
   ]
 };
 
-let S = {
-  level:null,
-  qi:0,
-  score:0,
-  answered:false,
-  shuffled:[]
-};
+let level = "";
+let index = 0;
 
-function startQuiz(level){
-  S.level = level;
-  S.qi = 0;
-  S.score = 0;
-  S.answered = false;
-
-  const pool = [...Q[level]];
-  S.shuffled = pool;
-
-  showScreen("screen-quiz");
-  renderQ();
+function start(l){
+  level = l;
+  index = 0;
+  document.getElementById("home").style.display = "none";
+  document.getElementById("quiz").style.display = "block";
+  load();
 }
 
-function renderQ(){
-  const q = S.shuffled[S.qi];
+function load(){
+  const q = data[level][index];
+  document.getElementById("question").textContent = q.q;
 
-  document.getElementById("question-text").textContent = q.text;
+  const answers = document.getElementById("answers");
+  answers.innerHTML = "";
 
-  const oc = document.getElementById("options");
-  oc.innerHTML = "";
+  q.a.forEach((text,i)=>{
+    const btn = document.createElement("button");
+    btn.textContent = text;
 
-  q.opts.forEach((opt,i)=>{
-    const b = document.createElement("button");
-    b.className = "option-btn";
-    b.textContent = opt;
+    btn.onclick = ()=>check(i);
 
-    b.onclick = () => selectAns(i,q.c,q.ex);
-    oc.appendChild(b);
+    answers.appendChild(btn);
   });
 
-  document.getElementById("next-btn").style.display = "none";
-  S.answered = false;
+  document.getElementById("next").style.display = "none";
 }
 
-function selectAns(sel,correct,ex){
-  if(S.answered) return;
-  S.answered = true;
+function check(i){
+  const q = data[level][index];
+  const btns = document.querySelectorAll("#answers button");
 
-  const opts = document.querySelectorAll(".option-btn");
+  btns.forEach((b,idx)=>{
+    if(idx===q.c) b.classList.add("correct");
+    if(idx===i && idx!==q.c) b.classList.add("wrong");
+    b.disabled = true;
+  });
 
-  opts[correct].classList.add("correct");
-  if(sel !== correct) opts[sel].classList.add("wrong");
-
-  document.getElementById("next-btn").style.display = "inline-block";
+  document.getElementById("next").style.display = "block";
 }
 
-function nextQuestion(){
-  S.qi++;
-  if(S.qi >= S.shuffled.length){
-    alert("Fertig");
-    showScreen("screen-home");
+document.getElementById("next").onclick = ()=>{
+  index++;
+  if(index < data[level].length){
+    load();
   } else {
-    renderQ();
+    alert("Level geschafft");
+    location.reload();
   }
-}
-
-function showScreen(id){
-  document.querySelectorAll(".screen").forEach(s=>s.classList.remove("active"));
-  document.getElementById(id).classList.add("active");
-}
+};
 </script>
 
 </body>
